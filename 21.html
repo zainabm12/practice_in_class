@@ -6,33 +6,8 @@
 </head>
 <body>
     <script type=""text/javascript">
-		document.write("Welcome to our pizza ordering system!");
-        var pizza_size = window.prompt("Enter a pizza size: ");
-        var first_topping = window.prompt("Enter a pizza topping: ");
-        var second_topping = window.prompt("Enter a 2nd pizza topping: ");
-        var third_topping = window.prompt("Enter a 3rd pizza topping: ");
-        var price = 0;
-        var taxRate = 0.05;
-       
-        if (pizza_size == "large")
-            price = 10.00;
-        else if (pizza_size == "medium")
-            price = 7.50;
-        else if (pizza_size == "small")
-            price = 5.00;
+		document.write("Bye" + " There" + 6); //Hi
 
-        // the possible toppings are pepperoni, pineapple, mushrooms and olives. You cannot repeat toppings
-        if (first_topping == "pepperoni" || second_topping  == "pepperoni" || third_topping == "pepperoni")
-            price = price + 1.50; 
-        if (first_topping == "pineapple" || second_topping  == "pineapple" || third_topping == "pineapple")
-            price = price + 1.15; 
-        if (first_topping == "mushrooms" || second_topping  == "mushrooms" || third_topping == "mushrooms")
-            price = price + 0.99; 
-        if (first_topping == "olives" || second_topping  == "olives" || third_topping == "olives")
-            price = price + 0.79; 
-        
-        total_price = price + price * taxRate;
-        window.alert("Your total price is: " + total_price + " Enjoy!");
 
 </script>
 </body>
