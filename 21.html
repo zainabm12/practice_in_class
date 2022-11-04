@@ -9,7 +9,7 @@
         var first_topping = window.prompt("Enter a pizza topping: ");
         var second_topping = window.prompt("Enter a 2nd pizza topping: ");
         var third_topping = window.prompt("Enter a 3rd pizza topping: ");
-        var price = 10;
+        var price = 0;
         var taxRate = 0.05;
        
         if (pizza_size == "large")
@@ -29,7 +29,7 @@
         if (first_topping == "olives" || second_topping  == "olives" || third_topping == "olives")
             price = price + 0.79; 
         
-        total_price = price + (price * taxRate);
+        int total_price = price + price * taxRate;
         window.alert("Your total price is: " + price + " Enjoy!");
 
 </script>
