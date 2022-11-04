@@ -6,10 +6,10 @@
     <script type=""text/javascript">
 		document.write("Welcome to our pizza ordering system!");
         var pizza_size = window.prompt("Enter a pizza size: ");
-        var 1st_topping = window.prompt("Enter a pizza topping: ");
-        var 2nd_topping = window.prompt("Enter a 2nd pizza topping: ");
-        var 3rd_topping = window.prompt("Enter a 3rd pizza topping: ");
-        var price = 0;
+        var first_topping = window.prompt("Enter a pizza topping: ");
+        var second_topping = window.prompt("Enter a 2nd pizza topping: ");
+        var third_topping = window.prompt("Enter a 3rd pizza topping: ");
+        var price;
         var taxRate = 0.05;
        
         if (pizza_size == "large")
@@ -20,13 +20,13 @@
             price = 5.00;
 
         // the possible toppings are pepperoni, pineapple, mushrooms and olives. You cannot repeat toppings
-        if (1st_topping == "pepperoni" || 2nd_topping  == "pepperoni" || 3rd_topping == "pepperoni")
+        if (first_topping == "pepperoni" || second_topping  == "pepperoni" || third_topping == "pepperoni")
             price = price + 1.50; 
-        if (1st_topping == "pineapple" || 2nd_topping  == "pineapple" || 3rd_topping == "pineapple")
+        if (first_topping == "pineapple" || second_topping  == "pineapple" || third_topping == "pineapple")
             price = price + 1.15; 
-        if (1st_topping == "mushrooms" || 2nd_topping  == "mushrooms" || 3rd_topping == "mushrooms")
+        if (first_topping == "mushrooms" || second_topping  == "mushrooms" || third_topping == "mushrooms")
             price = price + 0.99; 
-        if (1st_topping == "olives" || 2nd_topping  == "olives" || 3rd_topping == "olives")
+        if (first_topping == "olives" || second_topping  == "olives" || third_topping == "olives")
             price = price + 0.79; 
         
         total_price = price + (price * taxRate);
