@@ -16,15 +16,22 @@
             document.write("<br>")
             var answer = window.prompt("Have you had your birthday this year (Y/N)?");
             var subtract;
+
             if (answer == "Y"){
-                subtract = 0;
-                document.write("You had your birthday this year.");
+                subtract == 0;
             }
-            else
-                subtract = 1;
-                document.write("You did not have your birthday yet this year.");
-                document.write("<br>")
-     
+            else if (answer == "N"){
+                subtract == 1;
+            }
+             
+            if (answer == "Y"){
+                document.write("You had your birthday this year." + "<br>");
+            }
+            else if (answer == "N"){
+                document.write("You did not have your birthday yet this year." + "<br>");
+            else document.write("Could not determine if you have had your birthday yet this year so the displayed age may be wrong." + "<br>");
+            }
+
                 var d = new Date();
                 var year = d.getFullYear();
                 var age = parseInt(year)-(parseInt(yearofbirth) + parseInt(subtract)); 
