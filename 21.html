@@ -10,8 +10,10 @@
 
             var fullname = window.prompt("Enter your full name:"); 
             document.write("Your name is " +fullname);
+            document.write("<br>")
             var yearofbirth = window.prompt("Enter your year of birth:"); 
             document.write("You were born in " +yearofbirth);
+            document.write("<br>")
             var answer = window.prompt("Have you had your birthday this year (Y/N)?");
             var subtract;
             if (answer == "Y"){
@@ -20,13 +22,15 @@
             }
             else
                 subtract = 1;
+                document.write("<br>")
                 document.write("You did not have your birthday yet this year.");
-
+                document.write("<br>")
      
                 var d = new Date();
                 var year = d.getFullYear();
                 var age = parseInt(year)-(parseInt(yearofbirth) + parseInt(subtract)); 
                 document.write("Your age is: " +age +".");
+                document.write("<br>")
 
             age%2
                 if (age%2 == 0){
@@ -35,15 +39,9 @@
                 else{
                     document.write("Your age is an odd number.");
                 }
-        
-            
             
                 document.write("<br>")
-
-            
-
-            document.write("Your current age is " +age);
-
+        
             
 
 
