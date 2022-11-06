@@ -12,31 +12,33 @@
             document.write("Your name is " +fullname);
             document.write("<br>")
             var yearofbirth = window.prompt("Enter your year of birth:"); 
-            document.write("You were born in " +yearofbirth);
-            document.write("<br>")
-            var answer = window.prompt("Have you had your birthday this year (Y/N)?");
-            var subtract;
-            if (answer == "Y"){
-                subtract == 0;                
-                document.write("You had your birthday this year." + "<br>");
+            document.write("You were born in " +yearofbirth + "<br>");
 
+            var d = new Date();
+                var year = d.getFullYear();
+                var age = parseInt(year)-parseInt(yearofbirth);
+
+            var answer = window.prompt("Have you had your birthday this year (Y/N)?");
+                 if (answer == "Y"){
+                document.write("You had your birthday this year.");
+                document.write("<br>");
+                document.write("Your age is" +age);
             }
-            else subtract == 1;{
-            document.write("You did not have your birthday yet this year." + "<br>");
+
+                else {
+            document.write("You did not have your birthday yet this year." +);
+            document.write("<br>");
+            document.write("Your age is" +(age - 1));
             }
              
 
-                var d = new Date();
-                var year = d.getFullYear();
-                var age = parseInt(year)-(parseInt(yearofbirth) + parseInt(subtract)); 
-                document.write("Your age is: " +age +".");
                 document.write("<br>")
 
             age%2
                 if (age%2 == 0){
                     document.write("Your age is an even number.");
                 }
-                else{
+                else {
                     document.write("Your age is an odd number.");
                 }
             
