@@ -1,56 +1,22 @@
 <html>
     <head>
-        <title>Lab 07 - COSC 122 Index page for Task 1</title>
+        <title>Lab07 - COSC 122 Index page for Task 2</title>
     </head>
-    <body>
-        <h1>Task 1</h1>
-        <script type="text/javascript">
-            // Name: Zainab Mohammad, Student Number: 16045767
+    <body style="background-color: white;">
+        <h1>Task 2</h1>
+        <h2>
+            <script type="text/javascript">
+                // Name: Zainab Mohammad, Student Number: 16045767
             // The rest of your code will go here
 
-            var fullname = window.prompt("Enter your full name:"); 
-            document.write("Your name is " +fullname);
-            document.write("<br>")
-            var yearofbirth = window.prompt("Enter your year of birth:"); 
-            document.write("You were born in " +yearofbirth + "<br>");
-
-            var d = new Date();
-                var year = d.getFullYear();
-                var age = parseInt(year)-parseInt(yearofbirth);
-
-            var answer = window.prompt("Have you had your birthday this year (Y/N)?");
-                 if (answer == "Y"){
-                document.write("You had your birthday this year.");
-                document.write("<br>");
-                var realage = age
-                document.write("Your age is " +realage);
+            var j=0;
+            while (j <= 10){
+                document.write(j +"<br>");
+                j=j+1;
             }
 
-                else {
-            document.write("You did not have your birthday yet this year.");
-            document.write("<br>");
-            var realage = age - 1
-            document.write("Your age is" +realage);
-            }
-             
 
-
-                document.write("<br>")
-
-            
-                if (realage%2 == 0){
-                    document.write("Your age is an even number.");
-                }
-                else {
-                    document.write("Your age is an odd number.");
-                }
-            
-                document.write("<br>")
-        
-            
-
-
-            
-        </script>
+            </script>
+        </h2>
     </body>
 </html>
