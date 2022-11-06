@@ -1,25 +1,80 @@
 <html>
     <head>
-        <title>Lab07 - COSC 122 Index page for Task 2</title>
+        <title>Lab07 - COSC 122 Index page for Task 3</title>
     </head>
-    <body style="background-color: white;">
-        <h1>Task 2</h1>
+    <body>
+        <h1>Task 3</h1>
+        <p>The computer will pick a number between 1 and 100 (inclusive).  Your job is to guess that number in as few guesses as possible.  If you take more than 6 guesses, the computer wins!</p>
         <h2>
             <script type="text/javascript">
                 // Name: Zainab Mohammad, Student Number: 16045767
-            // The rest of your code will go here
 
-            var j;
-            for (j=1; j <= 10; j++) {
-                if (j%2 == 0){
-                document.write(j + " even" +"<br>");
+		        // Declare your variable to store the computer's random number here.
+		        // Declare your array here.
+                var myArray = new Array(6);
+                var size = myArray.length;
+
+		        // This function will generate a random number between minVal and maxVal inclusive.
+		        // Assumption: minVal should be less than or equal to maxVal.
+		        function getRandom(minVal, maxVal) {	
+                    var numberRangeSize = maxVal - minVal;
+                    return Math.floor(Math.random()*numberRangeSize)+minVal;
                 }
-                else {
-                    document.write(j + " odd" +"<br>");
-                }
-            }
                 
+                // Create a random number.
+                var computerNumber = getRandom(1,100);
+
+
+		        // Declare your loop variable here.
+		        // Write your loop that will allow up to six guesses.
+                
+                  var j;
+                  
+                // for (; ;) 
+                 for (j=1; j <= 6; j++);
+                {
+                    {
+                    // Your code goes here
+                    
+                    var guesses = window.prompt("Guess a number between 1 and 100");
+                    myArray[j] = guesses;
+                            
+			        // Determine if the guess is correct, too high, or too low.
+			        if (guesses == computerNumber) {
+                        // Clicked OK=YES
+                        window.alert("You win by guessing correctly!  My number was: " +computerNumber);
+                        }			// This command will exit the loop when the player wins the game - LEAVE IT HERE!
+                    
+                        
+                    else if (guesses > computerNumber) {	
+                        window.alert("Your guess was too high!");
+                    } 
+                    else {
+                        window.alert("Your guess was too low!");
+                    }
+                
+                    }
+            
+		        // Write out message here
+                if (guesses != computerNumber) {
+                    document.write("The computer wins! My number was: " +computerNumber);
+                    }
+                }
+		        // Your code to print out list of guesses
+                            
+                    do {
+                        var i = 1;
+                        var k = 0;
+                        document.write("Guess " +i + "was: " + myArray[k] );
+                        i++;
+                        k++; 
+                    }
+                        while(myArray[j] == true);
+
             </script>
         </h2>
     </body>
 </html>
+
+
+
