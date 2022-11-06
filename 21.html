@@ -11,8 +11,8 @@
 
 		        // Declare your variable to store the computer's random number here.
 		        // Declare your array here.
-                var myArray = new Array(6);
-                var size = myArray.length;
+                var guesses = new Array(6);
+                var size = guesses.length;
 
 		        // This function will generate a random number between minVal and maxVal inclusive.
 		        // Assumption: minVal should be less than or equal to maxVal.
@@ -36,7 +36,7 @@
                     {
                     // Your code goes here
                     
-                    var guesses = window.prompt("Guess a number between 1 and 100");
+                    guesses = parseInt(window.prompt("Guess a number between 1 and 100"));
                     myArray[j] = guesses;
                             
 			        // Determine if the guess is correct, too high, or too low.
@@ -65,7 +65,7 @@
                     do {
                         var i = 1;
                         var k = 0;
-                        document.write("Guess " +i + "was: " + myArray[k] );
+                        document.write("Guess " +i + " was: " + myArray[k] );
                         i++;
                         k++; 
                     }
