@@ -11,18 +11,37 @@
             var fullname = window.prompt("Enter your full name:"); 
             document.write("Your name is " +fullname);
             var yearofbirth = window.prompt("Enter your year of birth:"); 
+            document.write("You were born in " +yearofbirth);
             var answer = window.prompt("Have you had your birthday this year (Y/N)?");
             var subtract;
             if (answer == "Y"){
                 subtract = 0;
+                document.write("You had your birthday this year.");
             }
             else
                 subtract = 1;
+                document.write("You did not have your birthday yet this year.");
+
      
                 var d = new Date();
                 var year = d.getFullYear();
                 var age = parseInt(year)-(parseInt(yearofbirth) + parseInt(subtract)); 
-            document.write("<br>")
+                document.write("Your age is: " +age +".");
+
+            age%2
+                if (age%2 == 0){
+                    document.write("Your age is an even number.");
+                }
+                else{
+                    document.write("Your age is an odd number.");
+                }
+        
+            
+            
+                document.write("<br>")
+
+            
+
             document.write("Your current age is " +age);
 
             
