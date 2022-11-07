@@ -29,7 +29,7 @@
 		        // Write your loop that will allow up to six guesses.           
                 // for (; ;)
 
-                 for (var j=1; j <= 6; j++){
+                for (var j=1; j <= 6; j++){
                     // Your code goes here
                     
                     var guesses = parseInt(window.prompt("Guess a number between 1 and 100"));
@@ -40,7 +40,7 @@
                     if (guesses == computerNumber) {	
                         
                         // Clicked OK=YES
-                        window.alert("You win by guessing correctly!  My number was: " +computerNumber);
+                        document.write("You win by guessing correctly!  My number was: " +computerNumber);
                         break; 
                     }			// This command will exit the loop when the player wins the game - LEAVE IT HERE!
 
@@ -53,20 +53,16 @@
                     }			
                 
                     }
-            
 		        // Write out message here
                 if (guesses != computerNumber) {
+                    window.alert("The computer wins! My number was: " +computerNumber);
                     document.write("The computer wins! My number was: " +computerNumber);
                     }
                 
 		        // Your code to print out list of guesses
-                            
-                    do {
-                        var k = 1;
-                        document.write("Guess " + k + " was: " + myArray[k-1] );
-                        k++; 
+                    for (var h=1; h <= 6; h++){
+                        document.write("Guess " + h + " was: " + myArray[h-1] );
                     }
-                        while(myArray[j] == true);
 
             </script>
         </h2>
