@@ -7,45 +7,25 @@
         <p>The computer will pick a number between 1 and 100 (inclusive).  Your job is to guess that number in as few guesses as possible.  If you take more than 6 guesses, the computer wins!</p>
         <h2>
             <script type="text/javascript">
-                      document.write("You're going to create your own milkshake!");
-        var price = 0; taxRate = 0.03;
-        milk_type = window.prompt("Please enter the type of milk you would like(regular, almond or oat): ");
 
-        if (milk_type == "regular")
-            price = 1.00;
-        else if (milk_type == "almond" || milk_type == "oat")
-            price = 1.50;
+var arraylist = new Array(100);
 
-        choice = window.prompt("veggies or fruits or both: ");
-
-        /* price of fruits is 2.00, price of veggies is 1.95 */
-        if (choice == "veggies")
-            price = price + 1.95;
-        if (choice == "fruits")
-            price = price + 2.00;
-        if (choice == "both")
-            price = price + 1.95 + 2.00;
-        price = price + (price * taxRate);
-        window.alert("Your total price is: "+ price + " Enjoy!");
-        
-        
+var x=0;
+    while (x <= 10) {
+var x = 1;
+        while (y <= 10) {
+var y = 1;
+            y++;
+            arraylist[x] = x * y;
+        }
+        x++;
+    }
     
-		        
-		        var j;
-                for ( j=1; j <= 5; j++){
-                    orderTotals[j] = price;
-}
+    document.write(arraylist);
+    
 
 
-var orderTotals = new Array(5);
-            orderTotals[4] = price;
-            orderTotals[3] = price;
-            orderTotals[2] = price;
-            orderTotals[1] = price;
-            orderTotals[0] = price;
 
-                
-                
 </script>
         </h2>
     </body>
