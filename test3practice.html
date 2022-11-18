@@ -7,7 +7,7 @@
         <p>The computer will pick a number between 1 and 100 (inclusive).  Your job is to guess that number in as few guesses as possible.  If you take more than 6 guesses, the computer wins!</p>
         <h2>
             <script type="text/javascript">
-               document.write("You're going to create your own milkshake!");
+                      document.write("You're going to create your own milkshake!");
         var price = 0; taxRate = 0.03;
         milk_type = window.prompt("Please enter the type of milk you would like(regular, almond or oat): ");
 
@@ -27,6 +27,21 @@
             price = price + 1.95 + 2.00;
         price = price + (price * taxRate);
         window.alert("Your total price is: "+ price + " Enjoy!");
+        
+        
+        var orderTotals = new Array(5);
+            myArray[4] = price;
+            myArray[3] = price;
+            myArray[2] = price;
+            myArray[1] = price;
+            myArray[0] = price;
+
+		        
+		        var j;
+                for ( j=1; j <= 5; j++){
+                    document.write(j); 
+}
+
 
                 
                 
