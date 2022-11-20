@@ -20,19 +20,17 @@
     <div class="container">
 
         <script>
-
-        // Add all your code here for Task 3
-      
+  
         // Create a random number between 1 and 185.
         function getRandom(minVal, maxVal) {	    
             return Math.floor(Math.random() * 185) + 1 ;
         }
 
         //Create an array called numbers, and populate it with 20 random numbers using an appropriate loop type.
-            var numbers = new Array(20); 
+            var numbers = new Array(); 
 
             for (i = 0; i < 20; i++) {
-                numbers[i] = getRandom(1,185);
+                numbers.push(getRandom(1,185));
             }
 
             document.write(numbers);
@@ -40,15 +38,17 @@
         //Create a variable called buttons, initialize it to a blank string "".
             var buttons = ""
 
-            for (i = 1; i <= 185; i++) {
+            for (i = 0; i < 185; i++) {
                 if (numbers.includes(i)){
-                    <button type="button" class="btn btn-danger">i</button>
+                    buttons+=`<button type="button" class="btn btn-danger">${i}</button>`
                 } else{
-                    <button type="button" class="btn btn-success">i</button>
+                    buttons+= `<button type="button" class="btn btn-success">${i}</button>`
                     }
             }
-            
+
             document.write(buttons);
+
+
 
 
 
