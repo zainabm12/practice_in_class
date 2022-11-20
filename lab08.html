@@ -20,7 +20,7 @@
     <div class="container">
 
         <script>
-  
+      
         // Create a random number between 1 and 185.
         function getRandom(minVal, maxVal) {	    
             return Math.floor(Math.random() * 185) + 1 ;
@@ -33,26 +33,18 @@
                 numbers.push(getRandom(1,185));
             }
 
-            document.write(numbers);
-
         //Create a variable called buttons, initialize it to a blank string "".
             var buttons = ""
 
             for (i = 0; i < 185; i++) {
                 if (numbers.includes(i)){
-                    buttons+=`<button type="button" class="btn btn-danger">${i}</button>`
+                    buttons+=`<button type="button" class="btn btn-warning">${i}</button>`
                 } else{
-                    buttons+= `<button type="button" class="btn btn-success">${i}</button>`
+                    buttons+= `<button type="button" class="btn btn-info">${i}</button>`
                     }
             }
 
             document.write(buttons);
-
-
-
-
-
-
 
         </script>
     </div>
