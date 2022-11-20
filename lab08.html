@@ -14,17 +14,25 @@
                 Click Here for a List of Flowers
                 </button>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" onclick="printText(4)">Roses</a></li>
-                <li><a class="dropdown-item" onclick="printText(Lilies)">Lilies</a></li>
-                <li><a class="dropdown-item" onclick="printText(8)">Tulips</a></li>
-                <li><a class="dropdown-item" onclick="printText(10)">Tulips</a></li> 
+                <li><a class="dropdown-item" onclick="printText(4)">4 instances</a></li>
+                <li><a class="dropdown-item" onclick="printText(6)">6 instances</a></li>
+                <li><a class="dropdown-item" onclick="printText(8)">8 instances</a></li>
+                <li><a class="dropdown-item" onclick="printText(10)">10 instances</a></li> 
                 </ul>
             </div>
 
 
+        <script> 
+            function printText(times){
+                // the rest of you code goes here
+                
+                var j;
+            for (j=1; j <= 10; j++) {
+                document.write("Vivamus efficitur sem dictum leo faucibus, a scelerisque nisi pretium.");
+                }
 
 
-    
+            }
         </script>
     </body>
 </html>
